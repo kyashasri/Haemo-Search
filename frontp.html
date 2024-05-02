@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home Page</title>
+<style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #d8302a;
+            color: #f5f2f2;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            background-color: #464545;
+        }
+        .dropdown-container {
+            display: flex;
+            justify-content: flex-end; /* Aligns content to the right */
+            padding-right: 20px; /* Adjust as needed */
+        }
+        .dropdown {
+            margin-left: 10px; /* Adjust spacing between buttons */
+        }
+        .footer{
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 2px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        
+    /* Dropdown container */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      margin-left:100px; 
+    }
+
+    /* Dropdown button */
+    .dropbtn {
+      background-color: #d3d0d0;
+      color: rgb(15, 9, 9);
+      padding: 16px;
+      font-size: 18px;
+      border: none;
+      cursor: pointer;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: bold;
+      
+    }
+
+    /* Dropdown content (hidden by default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #efe8e8;
+      min-width: 90px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {
+      background-color: #ec6464;
+    }
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    #user{
+      margin-right: 20px;
+    }
+
+</style>
+</head>
+<body>
+
+    <header>
+        <h1>Haemo Search</h1>
+    </header>
+
+    <nav>
+        <div class="dropdown-container">
+            <div class="dropdown">
+                <button class="dropbtn" id="admin">Admin</button>
+                <div class="dropdown-content">
+                  <a href="admin_log.html">Login</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="dropbtn" id="user">User</button>
+                <div class="dropdown-content">
+                  <a href="logpage.html">Login</a>
+                  <a href="signup.html">SignUp</a>
+                </div>
+              </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <img src="blood1.png" style="max-width: 100%; height: auto;">
+    </div>
+
+    <div class="footer">
+        <b>Copyright &#xA9; 2024,Designed & Developed by Project Batch-12. All Rights Reserved .     Contact us : 245122733002@mvsrec.edu.in </b>
+    </div>
+
+</body>
+</html>
+
