@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retrieve Data</title>
+</head>
+<body>
+    <select id="tupleSelect" onchange="retrieveData()">
+        <!-- Populate this dropdown with tuples from your database -->
+        <!-- Example: <option value="1">Tuple 1</option> -->
+        <option value ="">--Please select an option--</option>
+        <option value="A S Rao Nagar">A S Rao Nagar</option>
+        <option value="Abids">Abids</option>
+        <option value="Ameerpet">Ameerpet</option>
+        <option value="Banjara Hills">Banjara Hills</option>       
+        <option value="Bala Nagar">Bala Nagar</option>
+        <option value="Bowenpally">Bowenpally</option>
+        <option value="Chaderghat">Chaderghat</option>
+        <option value="Chaitanyapuri">Chaitanyapuri</option>
+        <option value="Gachibowli">Gachibowli</option>
+        <option value="Himatnagar">Himatnagar</option>
+        <option value="Himayat Nagar">Himayat Nagar</option>
+        <option value="Jeedimetla">Jeedimetla</option>
+        <option value="Jubilee Hills">Jubilee Hills</option>
+        <option value="Kachiguda">Kachiguda</option>
+        <option value="Karkhana">Karkhana</option>
+        <option value="Khairatabad">Khairatabad</option>
+        <option value="Koti">Koti</option>
+        <option value="Kukatpally">Kukatpally</option>
+        <option value="L B Nagar">L B Nagar</option>
+        <option value="Malakpet">Malakpet</option>
+        <option value="Malkajgiri">Malkajgiri</option>
+        <option value="Manikonda">Manikonda</option>
+        <option value="Mehdipatnam">Mehdipatnam</option>
+        <option value="Miyapur">Miyapur</option>
+        <option value="Musheerabad">Musheerabad</option>
+        <option value="Nacharam">Nacharam</option>
+        <option value="Nagole">Nagole</option>
+        <option value="Nampally">Nampally</option>
+        <option value="Narayanguda">Narayanguda</option>
+        <option value="Patancheru">Patancheru</option>
+        <option value="Punjagutta">Punjagutta</option>
+        <option value="Putli Bowli">Putli Bowli</option>
+        <option value="Santosh Nagar">Santosh Nagar</option>
+        <option value="Secunderabad">Secunderabad</option>
+        <option value="Tarnaka">Tarnaka</option>
+        <option value="Toli Chowki">Toli Chowki</option>
+        <option value="Uppal">Uppal</option>
+        <option value="Vanasthalipuram">Vanasthalipuram</option>
+        <option value="Vidya Nagar">Vidya Nagar</option>
+        <option value="West Maredpally">West Maredpally</option>
+    </select>
+
+    <div id="resultContainer">
+        <!-- Display retrieved data here -->
+    </div>
+
+    <script>
+        function retrieveData() {
+            var selectedId = document.getElementById("tupleSelect").value;
+
+            // Make an asynchronous request to retrieve data
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    var data = JSON.parse(this.responseText);
+
+                    // Display the retrieved data in the resultContainer
+                    document.getElementById("resultContainer").innerHTML = JSON.stringify(data);
+                }
+            };
+
+            // Replace 'retrieve_data.php' with the correct path to your PHP file
+            xhr.open("GET", "retrieve.php?id=" + selectedId, true);
+            xhr.send();
+        }
+    </script>
+</body>
+</html>
