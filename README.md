@@ -5,4 +5,6 @@ The project aims to facilitate quik and efficient access to nearby blood banks s
 
 Simultaneously, it enables administrators to update and manage blood stock details, ensuring accurate and real-time information for potential recipients. The user-friendly interface prioritizes the navigation, insuring a better experience for recipients. 
 
-It has two modules, one is the admin module where the owner of the blood bank updatesthe stock and other is the user module where the user can search for the bloodbanks based on their requeried location. The website displays the blood banksinformation based on the given location and blood group.We developed this website using HTML, CSS, PHP, JAVASCRIPT, BOOTSTRAP and MYSQL .Through this digital solution we aspire to contribute improved healthcare outcomes by connecting individual with life-saving resources in their local communities.
+It has two modules, one is the admin module where the owner of the blood bank updatesthe stock and other is the user module where the user can search for the bloodbanks based on their requeried location. The website displays the blood banksinformation based on the given location and blood group.We developed this website using HTML, CSS, PHP, JAVASCRIPT, BOOTSTRAP and MYSQL.
+
+Through this digital solution we aspire to contribute improved healthcare outcomes by connecting individual with life-saving resources in their local communities.
