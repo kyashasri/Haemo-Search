@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  background-image: url('https://media.istockphoto.com/id/1257429592/photo/blood-cells.webp?b=1&s=170667a&w=0&k=20&c=8m1xNzoiKoe9hhtd3iK0BK0_ZwJWEots8usPGiAT8zI='); /* Replace with your actual image URL */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden;
+  
+}
+
+header {
+  background-color: #cc0000;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+section {
+  margin: 0.5em auto;
+  width: 450px;
+  height: 450px;
+  padding: 2em;
+  background-color: rgba(255, 255, 255, 0.8); 
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+  font-size:19px;
+  font-weight:535;
+
+  
+}
+
+.selection{
+  width: 100%;
+  padding: 0.75em;
+  box-sizing:border-box;
+  justify-content: center;
+}
+
+button {
+  background-color: #cc0000;
+  color: #fff;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  display:block;
+  font-size: 18px;
+}
+
+button:hover {
+  background-color: #990000;
+}
+h2{
+    text-align: center;
+    font-weight: 780;
+
+}
+
+
+
